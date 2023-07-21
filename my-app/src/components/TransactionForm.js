@@ -75,5 +75,7 @@ return (
 
 };
 
+export default TransactionForm;
+
 
 
