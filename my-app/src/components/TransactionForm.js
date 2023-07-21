@@ -41,7 +41,7 @@ return (
      <div>
         <label htmlFor="description">Description:</label>
         <input
-         type="description"
+         type="text"
          id="description"
          value={description}
          onChange={(e) => setDescription(e.target.value)}
@@ -50,7 +50,7 @@ return (
      <div>
         <label htmlFor="category">Category:</label>
         <input
-         type="category"
+         type="text"
          id="category"
          value={category}
          onChange={(e) => setCategory(e.target.value)}
@@ -59,7 +59,7 @@ return (
      <div>
         <label htmlFor="amount">Amount:</label>
         <input
-         type="amount"
+         type="number"
          id="amount"
          value={amount}
          onChange={(e) => setAmount(e.target.value)}
