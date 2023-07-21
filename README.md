@@ -1,5 +1,5 @@
 # Bank-of-Flatiron
-The Bank-of-Flatiron is a React application that empowers users to efficiently track and manage their bank transactions for a bank called Flatiron. This app provides a user-friendly interface to view a table of recent transactions, add new transactions, and apply filters based on transaction descriptions.
+The Bank-of-Flatiron is a React application that empowers users to efficiently track and manage their bank transactions.This app provides a user-friendly interface to view a table of recent transactions, add new transactions, and apply filters based on transaction descriptions.
 
 # Core Deliverables
 As a user, you can perform the following tasks with the Bank Transaction Monitor App:
