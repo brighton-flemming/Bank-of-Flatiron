@@ -2,7 +2,7 @@
 The Bank-of-Flatiron is a React application that empowers users to efficiently track and manage their bank transactions.This app provides a user-friendly interface to view a table of recent transactions, add new transactions, and apply filters based on transaction descriptions.
 
 # Core Deliverables
-As a user, you can perform the following tasks with the Bank Transaction Monitor App:
+As a user, you can perform the following tasks with the Bank of Flatiron:
 
 1. View Transactions Table: The app displays a well-organized table containing crucial details of recent bank transactions. These details include the transaction date, description, category, and amount, allowing users to easily review their financial activities.
 
@@ -11,7 +11,7 @@ As a user, you can perform the following tasks with the Bank Transaction Monitor
 3. Filter Transactions: The app offers a powerful search functionality, enabling users to filter transactions based on their descriptions. By typing into the search bar, only transactions with matching descriptions will be displayed in the table, helping users quickly find specific transactions of interest.
 
 # Technologies Used
-The Bank Transaction Monitor App harnesses the following technologies to deliver an efficient and seamless user experience:
+The Bank of Flatiron harnesses the following technologies to deliver an efficient and seamless user experience:
 
 1. React: A robust JavaScript library for building interactive user interfaces and managing stateful components. React enables the dynamic rendering and updating of transaction data, enhancing user interaction.
 
@@ -19,7 +19,7 @@ The Bank Transaction Monitor App harnesses the following technologies to deliver
 
 
  # Getting Started
-To experience the full functionality of the Bank Transaction Monitor App, follow these steps:
+To experience the full functionality of the Bank of Flatiron, follow these steps:
 
 1. Clone the Repository: Begin by cloning the project's repository from GitHub to your local machine.
 
@@ -27,10 +27,10 @@ To experience the full functionality of the Bank Transaction Monitor App, follow
 
 3. Start the JSON Server: The app leverages a JSON Server for data management. Use npm run start-server to initiate the server.
 
-4. Start the React App: To launch the Bank Transaction Monitor App, execute npm start and open the app in your web browser.
+4. Start the React App: To launch the Bank of Flatiron, execute npm start and open the app in your web browser.
 
 # Project Structure
-The Bank Transaction Monitor App follows a well-organized project structure, making it easy to navigate and understand:
+The Bank of Flatiron follows a well-organized project structure, making it easy to navigate and understand:
 
 go
 Copy code
@@ -53,7 +53,7 @@ Copy code
 4. db.json: A JSON file that serves as a mock database, providing sample transaction data for the app.
 
 # Usage
-Once the Bank Transaction Monitor App is running, you can utilize its various features to manage your bank transactions efficiently:
+Once the Bank of Flatiron is running, you can utilize its various features to manage your bank transactions efficiently:
 
 1. View the transactions table to review your recent financial activities.
 
