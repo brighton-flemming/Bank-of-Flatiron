@@ -36,6 +36,7 @@ return (
          id="date"
          value={date}
          onChange={(e) => setDate(e.target.value)}
+         required
         />
      </div>
      <div>
@@ -45,6 +46,7 @@ return (
          id="description"
          value={description}
          onChange={(e) => setDescription(e.target.value)}
+         required
         />
      </div>
      <div>
@@ -54,6 +56,7 @@ return (
          id="category"
          value={category}
          onChange={(e) => setCategory(e.target.value)}
+        required
         />
      </div>
      <div>
@@ -63,6 +66,7 @@ return (
          id="amount"
          value={amount}
          onChange={(e) => setAmount(e.target.value)}
+        required
         />
      </div>
      
