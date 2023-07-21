@@ -9,8 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start-server": "json-server --watch src/db.json --port 3000",
-    "start": "npm run start-server && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
