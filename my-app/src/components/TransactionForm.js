@@ -69,12 +69,11 @@ return (
         required
         />
      </div>
-     
-
+     <button type="submit">Add Transaction</button>
     </form>
-)
+);
 
-}
+};
 
 
 
