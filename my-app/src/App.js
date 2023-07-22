@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import TransactionForm from './components/TransactionForm';
 import TransactionTable from './components/TransactionTable';
+import SearchBar from './components/SearchBar';
 
 class App extends Component {
   render() {
