@@ -20,4 +20,6 @@ const SearchBar = ({transactions, onSearch}) => {
         />
     </div>
    )
-}
+};
+
+export default SearchBar;
