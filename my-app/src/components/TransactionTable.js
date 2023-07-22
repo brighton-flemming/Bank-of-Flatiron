@@ -12,14 +12,14 @@ const TransactionTable = ({transactions}) => {
         </tr>
        </thead>
        <tbody>
-        {transactions.map((transactions) => {
+        {transactions.map((transactions) => (
         <tr key={transactions.id}>
          <td>{transactions.date}</td>
          <td>{transactions.description}</td>
          <td>{transactions.category}</td>
          <td>{transactions.amount}</td>
         </tr>
-        }
+        )
         )}
         
        </tbody>
