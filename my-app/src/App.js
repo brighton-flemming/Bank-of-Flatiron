@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TransactionForm from './components/TransactionForm';
+import TransactionTable from './components/TransactionTable';
 
 class App extends Component {
   render() {
