@@ -1,5 +1,4 @@
-import React, { Component, useEffect } from "react";
-import logo from "./logo.svg";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import TransactionForm from "./components/TransactionForm";
 import TransactionTable from "./components/TransactionTable";
@@ -8,23 +7,27 @@ import SearchBar from "./components/SearchBar";
 const App = () => {
   const [transactions, setTransactions] = useState([]);
   const [searchName, setSearchName] = useState("");
+  const [filteredTransactions, setFilteredTransactions] = useState([]);
 
-  useEffect(() => {
-    fetchTransactions();
-  }, []);
+
 
   const fetchTransactions = async () => {
     try {
       const response = await fetch("http://localhost:3000/transactions");
       if (!response.ok) {
-        throw new Error("Network response was srewed up.Sorry");
+        throw new Error("Network response was srewed up. Sorry");
       }
       const data = await response.json();
       setTransactions(data);
+      setFilteredTransactions(data)
     } catch (error) {
       console.log("Error in obtaining the transactions:", error);
     }
   };
+
+  useEffect(() => {
+    fetchTransactions();
+  }, []);
 
   const handleAddTransaction = async (newTransaction) => {
     try {
@@ -38,6 +41,8 @@ const App = () => {
       }
       const data = await response.json();
       setTransactions([...transactions, data]);
+      setFilteredTransactions([...transactions, data]);
+
     } catch (error) {
       console.log("Error in obtaining the transactions:", error);
     }
@@ -50,17 +55,15 @@ const App = () => {
         .toLowerCase()
         .includes(e.target.value.toLowerCase())
     );
-    setSearchName(filteredTransactions);
+    setFilteredTransactions(filteredTransactions);
   };
 
   return (
     <div>
       <h1> Bank Of Flatiron</h1>
       <TransactionForm onAddTransaction={handleAddTransaction} />
-      <TransactionTable
-        searchName={searchName}
-        onSearchChange={handleSearchChange}
-      />
+      <TransactionTable searchName={searchName}
+        onSearchChange={handleSearchChange} transactions={searchName !== "" ? filteredTransactions : transactions} />
       <SearchBar transactions={transactions} />
     </div>
   );

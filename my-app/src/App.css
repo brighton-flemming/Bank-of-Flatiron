@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -21,4 +21,88 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+} */
+
+/* Shiny Theme */
+body.shiny-theme {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.shiny-theme .card {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.shiny-theme .card h2 {
+  color: #007bff;
+}
+
+.shiny-theme .card h3 {
+  color: #28a745;
+}
+
+.shiny-theme .card ul {
+  list-style: none;
+}
+
+.shiny-theme .card ul li {
+  margin-bottom: 8px;
+}
+
+.shiny-theme .card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.shiny-theme button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .card {
+  border: 1px solid #555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  background-color: #444;
+}
+
+.dark-theme .card h2 {
+  color: #ffca28;
+}
+
+.dark-theme .card h3 {
+  color: #66bb6a;
+}
+
+.dark-theme .card ul {
+  list-style: none;
+}
+
+.dark-theme .card ul li {
+  margin-bottom: 8px;
+}
+
+.dark-theme .card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dark-theme button {
+  background-color: #ffca28;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
