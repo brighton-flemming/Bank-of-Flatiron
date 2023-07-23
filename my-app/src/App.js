@@ -9,8 +9,6 @@ const App = () => {
   const [searchName, setSearchName] = useState("");
   const [filteredTransactions, setFilteredTransactions] = useState([]);
 
-
-
   const fetchTransactions = async () => {
     try {
       const response = await fetch("http://localhost:3000/transactions");
@@ -19,7 +17,7 @@ const App = () => {
       }
       const data = await response.json();
       setTransactions(data);
-      setFilteredTransactions(data)
+      setFilteredTransactions(data);
     } catch (error) {
       console.log("Error in obtaining the transactions:", error);
     }
@@ -42,7 +40,6 @@ const App = () => {
       const data = await response.json();
       setTransactions([...transactions, data]);
       setFilteredTransactions([...transactions, data]);
-
     } catch (error) {
       console.log("Error in obtaining the transactions:", error);
     }
@@ -55,18 +52,17 @@ const App = () => {
     );
     setFilteredTransactions(filteredTransactions);
   };
- 
-
-
 
   return (
     <div>
       <h1> Bank Of Flatiron</h1>
       <TransactionForm onAddTransaction={handleAddTransaction} />
       <SearchBar transactions={transactions} onSearch={handleSearchChange} />
-      <TransactionTable searchName={searchName}
-        onSearch={handleSearchChange} transactions={searchName !== "" ? filteredTransactions : transactions} />
-      
+      <TransactionTable
+        searchName={searchName}
+        onSearch={handleSearchChange}
+        transactions={searchName !== "" ? filteredTransactions : transactions}
+      />
     </div>
   );
 };
