@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 
 const SearchBar = ({ onSearch }) => {
@@ -8,15 +6,13 @@ const SearchBar = ({ onSearch }) => {
   const handleSearchChange = (e) => {
     const { value } = e.target;
     setSearchName(value);
-    
+
     if (typeof value === "string") {
-        onSearch(value.toLowerCase()); 
-      } else {
-        onSearch([]);
-      }
-    
-    
+      onSearch(value.toLowerCase());
+    } else {
+      onSearch([]);
     }
+  };
 
   return (
     <div className="search-bar">
@@ -31,5 +27,3 @@ const SearchBar = ({ onSearch }) => {
 };
 
 export default SearchBar;
-
-
