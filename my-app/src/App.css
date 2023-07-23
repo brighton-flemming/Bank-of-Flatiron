@@ -1,108 +1,89 @@
-/* .App {
+body {
+  background-color: #1a1a1a; 
+  color: #ffffff; 
+}
+
+header {
+  background-color: #ffd700; 
+  padding: 16px;
+  text-align: center; 
+}
+
+h1 {
+  font-size: 36px; /* Bigger font size for the header */
+  margin: 0; /* Remove default margin for the h1 element */
+}
+
+/* Styling for the TransactionTable */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  border-top: 2px solid;
+}
+
+th {
+  background-color: #ffd700; /* Shiny gold color for table header */
+}
+
+/* Styling for the TransactionForm */
+form {
+  display: flex;
+  flex-direction:row;
+  
+}
+
+label {
+  margin-bottom: 8px;
+  color: #ffd700; /* Shiny gold color for form labels */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #ffd700; /* Shiny gold color for form button */
+  color: #1a1a1a; /* Dark text color for form button */
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffcc00; /* Lighter gold color for button hover effect */
+}
+
+/* Styling for the SearchBar */
+input[type="search"] {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Styling for the SearchBar Results */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  border: 1px solid #ffd700; /* Shiny gold color for list item border */
+  margin-bottom: 4px;
+}
+
+/* Additional Styling for a Shiny Header */
+header {
+  background-color: #ffd700; /* Shiny gold color for header background */
+  padding: 16px;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
-
-/* Shiny Theme */
-body.shiny-theme {
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-.shiny-theme .card {
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-.shiny-theme .card h2 {
-  color: #007bff;
-}
-
-.shiny-theme .card h3 {
-  color: #28a745;
-}
-
-.shiny-theme .card ul {
-  list-style: none;
-}
-
-.shiny-theme .card ul li {
-  margin-bottom: 8px;
-}
-
-.shiny-theme .card img {
-  max-width: 100%;
-  height: auto;
-}
-
-.shiny-theme button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Dark Theme */
-body.dark-theme {
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-theme .card {
-  border: 1px solid #555;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  background-color: #444;
-}
-
-.dark-theme .card h2 {
-  color: #ffca28;
-}
-
-.dark-theme .card h3 {
-  color: #66bb6a;
-}
-
-.dark-theme .card ul {
-  list-style: none;
-}
-
-.dark-theme .card ul li {
-  margin-bottom: 8px;
-}
-
-.dark-theme .card img {
-  max-width: 100%;
-  height: auto;
-}
-
-.dark-theme button {
-  background-color: #ffca28;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
 }

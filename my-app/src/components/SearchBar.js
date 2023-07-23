@@ -1,19 +1,25 @@
+
+
 import React, { useState } from "react";
 
-const SearchBar = ({ transactions, onSearch }) => {
+const SearchBar = ({ onSearch }) => {
   const [searchName, setSearchName] = useState("");
 
   const handleSearchChange = (e) => {
-    setSearchName(e.target.value);
-    const filteredTransactions = transactions.filter((transactions) =>
-      transactions.description
-        .toLowerCase()
-        .includes(e.target.value.toLowerCase())
-    );
-    onSearch(filteredTransactions);
-  };
+    const { value } = e.target;
+    setSearchName(value);
+    
+    if (typeof value === "string") {
+        onSearch(value.toLowerCase()); 
+      } else {
+        onSearch([]);
+      }
+    
+    
+    }
+
   return (
-    <div>
+    <div className="search-bar">
       <input
         type="text"
         placeholder="Search By Description"
@@ -25,3 +31,5 @@ const SearchBar = ({ transactions, onSearch }) => {
 };
 
 export default SearchBar;
+
+

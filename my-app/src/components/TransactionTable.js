@@ -1,6 +1,8 @@
 import React from "react";
 
+
 const TransactionTable = ({ transactions }) => {
+
   return (
     <table>
       <thead>
@@ -12,12 +14,12 @@ const TransactionTable = ({ transactions }) => {
         </tr>
       </thead>
       <tbody>
-        {transactions.map((transactions) => (
-          <tr key={transactions.id}>
-            <td>{transactions.date}</td>
-            <td>{transactions.description}</td>
-            <td>{transactions.category}</td>
-            <td>{transactions.amount}</td>
+        {transactions.map((transaction) => (
+          <tr key={transaction.id}>
+            <td>{transaction.date}</td>
+            <td>{transaction.description}</td>
+            <td>{transaction.category}</td>
+            <td>{transaction.amount}</td>
           </tr>
         ))}
       </tbody>

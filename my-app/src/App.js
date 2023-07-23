@@ -48,23 +48,25 @@ const App = () => {
     }
   };
 
-  const handleSearchChange = (e) => {
-    setSearchName(e.target.value);
-    const filteredTransactions = transactions.filter((transactions) =>
-      transactions.description
-        .toLowerCase()
-        .includes(e.target.value.toLowerCase())
+  const handleSearchChange = (searchText) => {
+    setSearchName(searchText);
+    const filteredTransactions = transactions.filter((transaction) =>
+      transaction.description.toLowerCase().includes(searchText.toLowerCase())
     );
     setFilteredTransactions(filteredTransactions);
   };
+ 
+
+
 
   return (
     <div>
       <h1> Bank Of Flatiron</h1>
       <TransactionForm onAddTransaction={handleAddTransaction} />
+      <SearchBar transactions={transactions} onSearch={handleSearchChange} />
       <TransactionTable searchName={searchName}
-        onSearchChange={handleSearchChange} transactions={searchName !== "" ? filteredTransactions : transactions} />
-      <SearchBar transactions={transactions} />
+        onSearch={handleSearchChange} transactions={searchName !== "" ? filteredTransactions : transactions} />
+      
     </div>
   );
 };
