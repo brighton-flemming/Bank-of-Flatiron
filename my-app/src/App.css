@@ -10,11 +10,15 @@ header {
 }
 
 h1 {
-  font-size: 36px; /* Bigger font size for the header */
-  margin: 0; /* Remove default margin for the h1 element */
+  font-size: 36px; 
+  margin: 0; 
+  padding: 0%;
+  text-align:center;
+  padding: 6px 12px;
+  border-radius: 36px;
 }
 
-/* Styling for the TransactionTable */
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -28,19 +32,20 @@ th, td {
 }
 
 th {
-  background-color: #ffd700; /* Shiny gold color for table header */
+  background-color: #ffd700; 
 }
 
-/* Styling for the TransactionForm */
+
 form {
   display: flex;
   flex-direction:row;
-  
+  padding: 6px 12px;
+  border-radius: 36px;
 }
 
 label {
   margin-bottom: 8px;
-  color: #ffd700; /* Shiny gold color for form labels */
+  color: #ffd700; 
 }
 
 input[type="text"],
@@ -51,25 +56,25 @@ select {
 }
 
 button {
-  background-color: #ffd700; /* Shiny gold color for form button */
-  color: #1a1a1a; /* Dark text color for form button */
+  background-color: #ffd700; 
+  color: #1a1a1a; 
   padding: 8px 16px;
-  border: none;
+  border:3px solid silver;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #ffcc00; /* Lighter gold color for button hover effect */
+  background-color: #ffcc00; 
 }
 
-/* Styling for the SearchBar */
+
 input[type="search"] {
   padding: 8px;
   width: 100%;
   margin-bottom: 16px;
 }
 
-/* Styling for the SearchBar Results */
+
 ul {
   list-style: none;
   padding: 0;
@@ -77,13 +82,12 @@ ul {
 
 li {
   padding: 8px;
-  border: 1px solid #ffd700; /* Shiny gold color for list item border */
+  border: 1px solid #ffd700; 
   margin-bottom: 4px;
 }
 
-/* Additional Styling for a Shiny Header */
-header {
-  background-color: #ffd700; /* Shiny gold color for header background */
-  padding: 16px;
-  text-align: center;
+div {
+  padding: 6px 12px;
+  border-radius: 36px;
 }
+

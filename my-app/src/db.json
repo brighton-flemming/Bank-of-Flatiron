@@ -118,6 +118,13 @@
       "category": "Food",
       "amount": 700,
       "id": 17
+    },
+    {
+      "date": "2023-07-06",
+      "description": "Chipotle",
+      "category": "Food",
+      "amount": 600,
+      "id": 18
     }
   ]
 }
