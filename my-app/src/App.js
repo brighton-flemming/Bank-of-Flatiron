@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TransactionForm from './components/TransactionForm';
@@ -10,7 +10,15 @@ import SearchBar from './components/SearchBar';
 
   const [transactions, setTransactions] = useState([]);
   const [searchName, setSearchName] = useState('');
-  
+
+  useEffect (() => {
+    fetchTransactions();
+  }, [])
+
+  const fetchTransactions = async () => {
+    
+  }
+
   }
 
 
