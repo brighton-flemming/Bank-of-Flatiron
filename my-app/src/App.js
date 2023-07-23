@@ -16,7 +16,17 @@ import SearchBar from './components/SearchBar';
   }, [])
 
   const fetchTransactions = async () => {
-    
+    try {
+      const response = await fetch ("http://localhost:3000/transactions")
+      if(!response.ok) {
+        throw new Error('Network response was srewed up')
+      }
+      const data = await response.json();
+      setTransactions(data)
+    } catch (error) {
+      console.log('Error in obtaining the transactions:', error)
+    }
+      
   }
 
   }
