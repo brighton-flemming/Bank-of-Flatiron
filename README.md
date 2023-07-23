@@ -17,6 +17,8 @@ The Bank of Flatiron harnesses the following technologies to deliver an efficien
 
 2. JSON Server: To facilitate data management and storage, the app employs a simple mock API server. This server serves the transaction data and handles POST requests to store new transactions persistently.
 
+3. JSX (JavaScript XML) : To write HTML-like code within JavaScript. It is commonly used in React to define the structure and appearance of user interfaces. 
+
 
  # Getting Started
 To experience the full functionality of the Bank of Flatiron, follow these steps:
