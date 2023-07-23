@@ -40,7 +40,6 @@ import SearchBar from './components/SearchBar';
     if(!response.ok) {
       throw new Error('Network response was srewed up.Sorry')
    }
-  
    const data = await response.json();
       setTransactions([...transactions, data])
     } catch (error) {
@@ -48,7 +47,28 @@ import SearchBar from './components/SearchBar';
     }
   }
 
+  const handleSearchChange = (e) => {
+   setSearchName(e.target.value);
+   const filteredTransactions = transactions.filter((transactions) =>
+      transactions.description
+        .toLowerCase()
+        .includes(e.target.value.toLowerCase())
+   )
+   setSearchName(filteredTransactions);
+  }
 
+  return (
+
+    <div>
+      <h1> Bank Of Flatiron</h1>
+       <TransactionForm onAddTransaction={handleAddTransaction} />
+       <TransactionTable searchName={searchName} onSearchChange={handleSearchChange} />
+       <SearchBar transactions={transactions}/>
+
+    </div>
+  )
+
+  }
 
 
 
@@ -59,3 +79,4 @@ import SearchBar from './components/SearchBar';
 export default App;
 
 
+ 
