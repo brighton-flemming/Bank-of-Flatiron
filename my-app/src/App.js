@@ -19,7 +19,7 @@ import SearchBar from './components/SearchBar';
     try {
       const response = await fetch ("http://localhost:3000/transactions")
       if(!response.ok) {
-        throw new Error('Network response was srewed up')
+        throw new Error('Network response was srewed up.Sorry')
       }
       const data = await response.json();
       setTransactions(data)
@@ -27,8 +27,25 @@ import SearchBar from './components/SearchBar';
       console.log('Error in obtaining the transactions:', error)
     }
       
-  }
+  };
 
+  const handleAddTransaction = async(newTransaction) => {
+   try {
+    const response = await fetch("http://localhost:3000/transactions", {
+      method: 'POST',
+      headers: { 'Content-type': 'application/json',
+   },
+     body : JSON.stringify(newTransaction)
+    });
+    if(!response.ok) {
+      throw new Error('Network response was srewed up.Sorry')
+   }
+  
+   const data = await response.json();
+      setTransactions([...transactions, data])
+    } catch (error) {
+      console.log('Error in obtaining the transactions:', error)
+    }
   }
 
 
@@ -40,3 +57,5 @@ import SearchBar from './components/SearchBar';
 
 
 export default App;
+
+
