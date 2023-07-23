@@ -1,19 +1,19 @@
 body {
-  background-color: #1a1a1a; 
-  color: #ffffff; 
+  background-color: #1a1a1a;
+  color: #ffffff;
 }
 
 header {
-  background-color: #ffd700; 
+  background-color: #ffd700;
   padding: 16px;
-  text-align: center; 
+  text-align: center;
 }
 
 h1 {
-  font-size: 36px; 
-  margin: 0; 
+  font-size: 36px;
+  margin: 0;
   padding: 0%;
-  text-align:center;
+  text-align: center;
   padding: 6px 12px;
   border-radius: 36px;
 }
@@ -25,27 +25,28 @@ table {
   margin-bottom: 20px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ffffff;
   padding: 8px;
   border-top: 2px solid;
 }
 
 th {
-  background-color: #ffd700; 
+  background-color: #ffd700;
 }
 
 
 form {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   padding: 6px 12px;
   border-radius: 36px;
 }
 
 label {
   margin-bottom: 8px;
-  color: #ffd700; 
+  color: #ffd700;
 }
 
 input[type="text"],
@@ -56,15 +57,15 @@ select {
 }
 
 button {
-  background-color: #ffd700; 
-  color: #1a1a1a; 
+  background-color: #ffd700;
+  color: #1a1a1a;
   padding: 8px 16px;
-  border:3px solid silver;
+  border: 3px solid silver;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #ffcc00; 
+  background-color: #ffcc00;
 }
 
 
@@ -82,7 +83,7 @@ ul {
 
 li {
   padding: 8px;
-  border: 1px solid #ffd700; 
+  border: 1px solid #ffd700;
   margin-bottom: 4px;
 }
 
@@ -90,4 +91,3 @@ div {
   padding: 6px 12px;
   border-radius: 36px;
 }
-
