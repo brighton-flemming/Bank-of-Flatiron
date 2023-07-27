@@ -3,6 +3,10 @@ import React from "react";
 
 const TransactionTable = ({ transactions }) => {
 
+  if (!Array.isArray(transactions)) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <table>
       <thead>

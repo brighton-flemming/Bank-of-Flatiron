@@ -4,10 +4,12 @@ import TransactionForm from "./components/TransactionForm";
 import TransactionTable from "./components/TransactionTable";
 import SearchBar from "./components/SearchBar";
 
+
 const App = () => {
   const [transactions, setTransactions] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [filteredTransactions, setFilteredTransactions] = useState([]);
+
 
   const fetchTransactions = async () => {
     try {
@@ -39,7 +41,7 @@ const App = () => {
         body: JSON.stringify(newTransaction),
       });
       if (!response.ok) {
-        throw new Error("Network response was srewed up.Sorry");
+        throw new Error("Network response was screwed up.Sorry");
       }
       const data = await response.json();
       setTransactions([...transactions, data]);
