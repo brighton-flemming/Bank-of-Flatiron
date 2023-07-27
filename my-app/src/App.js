@@ -13,11 +13,15 @@ const App = () => {
     try {
       const response = await fetch("http://localhost:3000/transactions");
       if (!response.ok) {
-        throw new Error("Network response was srewed up. Sorry");
+        throw new Error("Network response was screwed up. Sorry");
       }
+    try {
       const data = await response.json();
       setTransactions(data);
       setFilteredTransactions(data);
+    } catch(error){
+      console.log ("Error parsing JSON data:", error);
+     }
     } catch (error) {
       console.log("Error in obtaining the transactions:", error);
     }
